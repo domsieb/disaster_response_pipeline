@@ -40,7 +40,7 @@ def load_data(database_filepath):
 
     X = df["message"]
     Y = df.drop(["id", "message", "original", "genre"], axis=1)
-    category_names = Y.columns.to_list()
+    category_names = Y.columns.tolist()
 
     return X, Y, category_names
 
